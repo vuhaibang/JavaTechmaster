@@ -20,8 +20,12 @@ public class Test3 {
         }
 
         String taiLieuCanTim = "Tiếu ngạo giang hồ";
+        timKiem(taiLieuCanTim, arr);
+    }
+
+    public static void timKiem(String keyword, ArrayList<TaiLieu> arr) {
         for (TaiLieu tl : arr) {
-            if (tl.tenTaiLieu == taiLieuCanTim) {
+            if (tl.tenTaiLieu == keyword) {
                 tl.hienThiThongTinTaiLieu();
             }
         }
